@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Nathan Gregori</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/disc-chart.css">
+    <link rel="stylesheet" href="css/journey.css">
+    <link rel="stylesheet" href="css/skill-fix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="cursor-trail-container">
+        <canvas id="cursor-trail"></canvas>
+    </div>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <div class="monogram-logo">
+                <a href="index.html">NG</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="about.html" class="mobile-link">About Me</a></li>
+                <li><a href="highlights.html" class="mobile-link">Highlights</a></li>
+                <li><a href="projects.html" class="mobile-link">Projects</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <p class="kicker">ABOUT ME</p>
+                <h1>The <span class="gradient-word">Story</span> So Far</h1>
+                <p class="story-intro">
+                    From Paris to Hong Kong, my journey has been shaped by cultural diversity, personal resilience, and professional drive. 
+                    Each stage has contributed to who I am today — a multifaceted individual refusing to be defined by a single path.
+                </p>
+
+                <!-- Advanced Story Slider Component -->
+                <div class="story-slider-container">
+                    <div class="story-slider">
+                        <!-- Card 1 -->
+                        <div class="story-card">
+                            <span class="age-label">Ages 0–7</span>
+                            <div class="icon-circle">
+                                <i class="ph-fill ph-globe"></i>
+                            </div>
+                            <h3 class="card-title">Early Years in Budapest</h3>
+                            <p class="card-description">
+                                Born in Paris to a French father and Chinese Vietnamese mother. I lived my childhood in Hungary,marked by multicultural influence and the foundation of my global perspective. I started piano lessons, developing discipline and creative expression that would become lifelong traits. Music taught me the balance of structure and creativity.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="story-card">
+                            <span class="age-label">Ages 7–9</span>
+                            <div class="icon-circle">
+                                <i class="ph-fill ph-music-notes"></i>
+                            </div>
+                            <h3 class="card-title">Musical Beginnings</h3>
+                            <p class="card-description">
+                                I moved to Paris with my family and discovered my passion for fencing. At the same time, I started to go to chess classes, competed in and won local tournaments. My artistic side also flourished as I pursued music more seriously with piano and organ. After passing exams, I was accepted in the French Conservatory where I studied piano under renowned teachers. I performed in classical concerts, sang in choirs, and played the organ in churches.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="story-card">
+                            <span class="age-label">Ages 9–13</span>
+                            <div class="icon-circle">
+                                <i class="ph-fill ph-fire"></i>
+                            </div>
+                            <h3 class="card-title">Facing Adversity</h3>
+                            <p class="card-description">
+                                After moving to Bucharest, I began training in fencing seriously — quickly rising through the ranks as I performed well in competitions and went to compete in France almost every month. There, I had the opportunity to train with some of the best fencers in Europe and earned multiple titles along the way. Alongside fencing, I also took up swimming and reached a good level. I continued performing regularly in music concerts, maintaining my passion for classical piano, and was consistently ranked top of my class academically.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 4 -->
+                        <div class="story-card">
+                            <span class="age-label">Ages 13–16</span>
+                            <div class="icon-circle">
+                                <i class="ph-fill ph-sword"></i>
+                            </div>
+                            <h3 class="card-title">Fencing Discovery</h3>
+                            <p class="card-description">
+                                I returned to France to join the French National Fencing Team and was accepted into the only school in Paris dedicated to elite athletes and musicians. There, I trained intensively every day to push my limits and reach the highest level of performance. I competed internationally every two weeks, consistently ranking among the top French fencers in my category. During this time, I also faced significant personal challenges, which ultimately shaped my character and resilience — forging the discipline and strength I carry with me today.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 5 -->
+                        <div class="story-card">
+                            <span class="age-label">Ages 16–18</span>
+                            <div class="icon-circle">
+                                <i class="ph-fill ph-graduation-cap"></i>
+                            </div>
+                            <h3 class="card-title">Hong Kong Scholarship</h3>
+                            <p class="card-description">
+                                Life brought me back to France, where I completed my Baccalaureate with Maths and Econ majors while continuing to compete with the French National Fencing Team. When COVID disrupted society, I began exploring university options overseas. Knowing the Olympic fencing champion was based in Hong Kong, I set my sights there — and was awarded a prestigious scholarship of approximately USD 93,000 to represent the university's fencing team. I made the bold decision to move to Hong Kong, driven by a deep desire to grow, evolve, and become the best version of myself.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 6 -->
+                        <div class="story-card">
+                            <span class="age-label">Ages 18–Now</span>
+                            <div class="icon-circle">
+                                <i class="ph-fill ph-rocket-launch"></i>
+                            </div>
+                            <h3 class="card-title">Professional Launch</h3>
+                            <p class="card-description">
+                                My time in Hong Kong deepened my passion for finance and sparked a new interest in Chinese language. I continued to compete at a high level in fencing, ranking in the Top 8 nationally in the U23 category in 2025 and winning the university championship three times. Academically, I was awarded six additional scholarships for outstanding merit. Professionally, I gained experience interning at prestigious financial institutions such as Nomura and the Hong Kong Exchanges. Now, as a recent graduate, I'm focused on harnessing the power of AI to drive meaningful impact in what I believe is the most pivotal era of human advancement.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="slider-navigation">
+                        <button class="slider-nav-button prev"><i class="ph-fill ph-caret-left"></i></button>
+                        <button class="slider-nav-button next"><i class="ph-fill ph-caret-right"></i></button>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div class="slider-progress">
+                        <div class="slider-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="experience-section">
+            <div class="container">
+                <h2>Educational <span class="gradient-highlight">Journey</span></h2>
+                <p class="timeline-subtext">My academic path across multiple countries, cultures, and educational systems - spanning 4 countries, 7 institutions, and 5 languages.</p>
+                
+                <div class="professional-timeline">
+                    <!-- Vertical line that runs through the center -->
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Education 1 - Left side -->
+                    <div class="timeline-block left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">18–22 years old</div>
+                            <div class="content-card">
+                                <h3>City University of Hong Kong</h3>
+                                <h4>Hong Kong</h4>
+                                <ul>
+                                    <li>Outstanding Entrance Scholarship (560k HKD)</li>
+                                    <li>Major in Strategy and International Management</li>
+                                    <li>Minor in Finance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 2 - Right side -->
+                    <div class="timeline-block right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">16–18 years old</div>
+                            <div class="content-card">
+                                <h3>Lycée Français Anna de Noailles</h3>
+                                <h4>Bucarest</h4>
+                                <ul>
+                                    <li>Maths & Economics Majors</li>
+                                    <li>French Baccalaureate with "High Honours"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 3 - Left side -->
+                    <div class="timeline-block left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">15–16 years old</div>
+                            <div class="content-card">
+                                <h3>Lycée Diagonale</h3>
+                                <h4>Paris</h4>
+                                <ul>
+                                    <li>Private school for outstanding Athletes and Musicians</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 4 - Right side -->
+                    <div class="timeline-block right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">13–15 years old</div>
+                            <div class="content-card">
+                                <h3>Lycée Jean de la fontaine</h3>
+                                <h4>Paris</h4>
+                                <ul>
+                                    <li>Only public school for outstanding Athletes and Musicians</li>
+                                    <li>Mid High school Exam with "Highest Honours"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 5 - Left side -->
+                    <div class="timeline-block left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">9–13 years old</div>
+                            <div class="content-card">
+                                <h3>Lycée Français Anna de Noailles</h3>
+                                <h4>Bucarest</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 6 - Right side -->
+                    <div class="timeline-block right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">7–9 years old</div>
+                            <div class="content-card">
+                                <h3>Lycée Buffon</h3>
+                                <h4>Paris</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 7 - Left side -->
+                    <div class="timeline-block left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">6–7 years old</div>
+                            <div class="content-card">
+                                <h3>Lycée Francais Gustave Eiffel</h3>
+                                <h4>Budapest</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 8 - Right side -->
+                    <div class="timeline-block right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">4–6 years old</div>
+                            <div class="content-card">
+                                <h3>Superkids International Preschool and Kindergarten</h3>
+                                <h4>Budapest</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy-section">
+            <div class="container">
+                <div class="philosophy-quote">
+                    <blockquote>
+                        "Disciplined like an athlete, strategic like an investor, and bold like a builder — I fuse finance, technology, and resilience to create systems that outperform, outlast trends, and outwork time."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="identity-section">
+            <div class="container">
+                <h2>Identity & <span class="gradient-highlight">Values</span></h2>
+                
+                <div class="personality-badges">
+                    <div class="badge-scroll">
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-globe"></i>
+                            </div>
+                            <div class="badge-label">Trilingual</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-trend-up"></i>
+                            </div>
+                            <div class="badge-label">Resilient</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-lightbulb"></i>
+                            </div>
+                            <div class="badge-label">Strategic Thinker</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-sword"></i>
+                            </div>
+                            <div class="badge-label">Fencing Champion</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-book-open"></i>
+                            </div>
+                            <div class="badge-label">Lifelong Learner</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-robot"></i>
+                            </div>
+                            <div class="badge-label">AI Enthusiast</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-chart-line"></i>
+                            </div>
+                            <div class="badge-label">Market Analyst</div>
+                        </div>
+                        <div class="personality-badge">
+                            <div class="badge-icon">
+                                <i class="ph-fill ph-pen-nib"></i>
+                            </div>
+                            <div class="badge-label">Creative Writer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Biography Section -->
+        <section class="video-biography-section" id="video-biography">
+            <div class="container">
+                <h2>My <span class="gradient-highlight">Journey</span></h2>
+                
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/your-video-id" title="Nathan Gregori - My Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="biography-content">
+                    <p class="biography-intro">
+                        I'm a multifaceted individual whose path has been shaped by cultural diversity, personal resilience, and professional ambition. From my early years in Paris to my current role in global finance, I've embraced the power of versatility.
+                    </p>
+                    
+                    <div class="biography-text">
+                        <p>
+                            I was born in Paris in 2003 and raised across Budapest, Paris, and Romania. My life has been shaped by movement, solitude, and the tension between chaos and control. I grew up feeling different from others; not better, just wired for depth. I was drawn to silence, precision, and beauty. I didn't enjoy small talk, and I couldn't pretend to care about what didn't feel real. From a young age, I became obsessed with understanding things deeply — whether it was sound, logic, or strategy.
+                        </p>
+                            
+                        <p>
+                            Music was my first mirror. I studied classical piano and church organ from the age of seven. I practiced not for applause but because the structure calmed my mind. Music gave me access to emotion when words failed. At the same time, I trained seriously in sports: swimming taught me stamina, chess sharpened my patience, and fencing became the ultimate test of focus and timing. I later joined the French National Team, competing internationally and winning medals. These disciplines were not hobbies. They were anchors — rituals that shaped my identity and gave me order in a world that often felt unstable.
+                        </p>
+                        
+                        <p>
+                            Throughout my teenage years, I created artistic projects in parallel. I produced music, wrote lyrics, edited videos, and built small experiments around identity and storytelling. But behind all of it was a desire for mastery. I never wanted to be average, and I never settled for "just enough." I pushed myself until my body broke down and my mind followed. I went through betrayal, loss, and deep mental collapse, but each time, I rebuilt. Stronger. Colder. Clearer. Pain, for me, was never something to avoid. It was a training ground.
+                        </p>
+                        
+                        <p>
+                            I've always been driven by an internal need to transcend — not just escape difficulty, but rise above it and turn it into something valuable. I care about truth, intensity, and beauty. I care about systems that scale, ideas that last, and actions that align with vision. I don't believe in shortcuts. I believe in leverage — and in becoming the kind of person who can carry weight, lead others, and endure pressure without breaking. My strength is not that I'm perfect. It's that I'm relentless.
+                        </p>
+                        
+                        <p>
+                            Today, I see my life as an intersection of three forces: the discipline of the athlete, the clarity of the strategist, and the creativity of the artist. I don't separate them — I fuse them. My vision is to build things that endure. Ventures powered by intelligence and ethics. Tools that multiply value. Stories that carry meaning. I'm not here to chase approval or comfort. I'm here to create impact, to move precisely, and to build a life that can't be ignored.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <h2>Skills & <span class="gradient-highlight">Expertise</span></h2>
+                
+                <div class="skill-tags-container">
+                    <div class="skill-category">
+                        <div class="skill-category-icon">
+                            <i class="ph-light ph-chart-line"></i>
+                        </div>
+                        <h3>Data & Analytics & Programming</h3>
+                        <div class="skill-tags">
+                            <div class="skill-tag">Tableau</div>
+                            <div class="skill-tag">PowerBI</div>
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">Excel</div>
+                            <div class="skill-tag">Data Modeling</div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">VBA</div>
+                            <div class="skill-tag">HTML CSS</div>
+                        </div>
+                        <div class="skill-meter">
+                            <div class="skill-progress" data-progress="95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-category-icon">
+                            <i class="ph-light ph-chats"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <div class="skill-tags">
+                            <div class="skill-tag">Public Speaking</div>
+                            <div class="skill-tag">Teamwork</div>
+                            <div class="skill-tag">Client Relations</div>
+                            <div class="skill-tag">Negotiation</div>
+                            <div class="skill-tag">Stakeholder Management</div>
+                            <div class="skill-tag">Trade Reporting</div>
+                        </div>
+                        <div class="skill-meter">
+                            <div class="skill-progress" data-progress="95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-category-icon">
+                            <i class="ph-light ph-robot"></i>
+                        </div>
+                        <h3>AI & Automation</h3>
+                        <div class="skill-tags">
+                            <div class="skill-tag">Cursor</div>
+                            <div class="skill-tag">Claude</div>
+                            <div class="skill-tag">Power Automate</div>
+                            <div class="skill-tag">n8n</div>
+                            <div class="skill-tag">Prompt Engineering</div>
+                        </div>
+                        <div class="skill-meter">
+                            <div class="skill-progress" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-category-icon">
+                            <i class="ph-light ph-globe"></i>
+                        </div>
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <div class="skill-tag">English (Native)</div>
+                            <div class="skill-tag">French (Native)</div>
+                            <div class="skill-tag">Mandarin (Conversational)</div>
+                            <div class="skill-tag">Romanian (Fluent)</div>
+                            <div class="skill-tag">Spanish (Conversational)</div>
+                            <div class="skill-tag">German (Conversational)</div>
+                        </div>
+                        <div class="skill-meter">
+                            <div class="skill-progress" data-progress="100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-category-icon">
+                            <i class="ph-light ph-paint-brush"></i>
+                        </div>
+                        <h3>Creative</h3>
+                        <div class="skill-tags">
+                            <div class="skill-tag">Photography</div>
+                            <div class="skill-tag">UI/UX Design</div>
+                            <div class="skill-tag">Content Creation</div>
+                            <div class="skill-tag">Visual Storytelling</div>
+                            <div class="skill-tag">Digital Art</div>
+                        </div>
+                        <div class="skill-meter">
+                            <div class="skill-progress" data-progress="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New DISC Profile Section -->
+        <section class="disc-profile-section">
+            <div class="container">
+                <div class="disc-profile-container">
+                    <div class="disc-header">
+                        <div class="disc-title">BEHAVIORAL PROFILE</div>
+                        <h2>DISC <span class="gradient-highlight">Assessment</span></h2>
+                        <p class="disc-explanation">
+                            The DISC assessment measures behavioral patterns across four primary dimensions: Dominance, Influence, Steadiness, and Compliance. My results reveal a high-energy profile with exceptional communication abilities and strategic thinking.
+                        </p>
+                    </div>
+                    
+                    <div class="disc-chart-container">
+                        <canvas id="disc-radar-chart" width="700" height="700"></canvas>
+                    </div>
+                    
+                    <div class="disc-insight-grid">
+                        <div class="disc-insight-card">
+                            <h3 class="disc-insight-title">
+                                <i class="ph-fill ph-lightning"></i>
+                                Influence (95%)
+                            </h3>
+                            <p class="disc-insight-content">
+                                My dominant trait is Influence, enabling exceptional communication and persuasive abilities. I naturally connect with others, build relationships easily, and excel in collaborative environments that reward creativity and social engagement.
+                            </p>
+                        </div>
+                        
+                        <div class="disc-insight-card">
+                            <h3 class="disc-insight-title">
+                                <i class="ph-fill ph-arrow-fat-lines-up"></i>
+                                Dominance (85%)
+                            </h3>
+                            <p class="disc-insight-content">
+                                The powerful Dominance trait means I'm results-oriented and focused on outcomes. I can take decisive action while maintaining strong interpersonal connections, making me effective in leadership roles that require both vision and drive.
+                            </p>
+                        </div>
+                        
+                        <div class="disc-insight-card">
+                            <h3 class="disc-insight-title">
+                                <i class="ph-fill ph-pulse"></i>
+                                Compliance (70%)
+                            </h3>
+                            <p class="disc-insight-content">
+                                My Compliance score shows I value precision and quality. I'm detail-oriented when necessary and can follow established procedures while still maintaining creative flexibility.
+                            </p>
+                        </div>
+                        
+                        <div class="disc-insight-card">
+                            <h3 class="disc-insight-title">
+                                <i class="ph-fill ph-anchor"></i>
+                                Steadiness (65%)
+                            </h3>
+                            <p class="disc-insight-content">
+                                My Steadiness score reflects my ability to be patient and supportive while still embracing change. I create stability without becoming rigid, allowing me to adapt to new circumstances.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statement Banner -->
+        <div class="statement-banner">
+            <p>"Achievements aren't medals. They're momentum markers of who I'm becoming."</p>
+            <div class="statement-underline"></div>
+        </div>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Want to learn more?</h2>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary">View My Projects</a>
+                    <a href="highlights.html" class="btn secondary">See Highlights</a>
+                    <a href="contact.html" class="btn secondary">Get In Touch</a>
+                    <a href="#" class="btn secondary">Download CV</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-watermark">NATHAN</div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="highlights.html">Highlights</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nathan-gregori/"><i class="ph-light ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/nathangregori"><i class="ph-light ph-github-logo"></i></a>
+                    <a href="mailto:Nathan_gregori@outlook.com"><i class="ph-light ph-envelope-simple"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Nathan Gregori. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/disc-chart.js"></script>
+    <script src="js/journey.js"></script>
+</body>
+</html> 
