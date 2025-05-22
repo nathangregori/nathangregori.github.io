@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Nathan Gregori</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-restore.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="cursor-trail-container">
+        <canvas id="cursor-trail"></canvas>
+    </div>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <div class="monogram-logo">
+                <a href="index.html">NG</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="about.html" class="mobile-link">About Me</a></li>
+                <li><a href="highlights.html" class="mobile-link">Highlights</a></li>
+                <li><a href="projects.html" class="mobile-link">Projects</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="gallery-hero">
+            <div class="container">
+                <p class="kicker">VISUAL JOURNEY</p>
+                <h1>Life Through the <span class="gradient-word">Lens</span></h1>
+                <p class="gallery-intro">
+                    A visual showcase of my journey through fencing competitions, global travels, creative projects, and professional endeavors.
+                </p>
+            </div>
+        </section>
+
+        <section class="photo-strip">
+            <div class="strip-container">
+                <div class="strip-scroll">
+                    <!-- Images as requested -->
+                    <div class="strip-item">
+                        <img src="img/fencing/1.JPG" alt="Fencing 1">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/fencing/2.JPG" alt="Fencing 2">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan2.jpg" alt="Nathan 2">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan3.jpg" alt="Nathan 3">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan4.jpg" alt="Nathan 4">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan5.jpg" alt="Nathan 5">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan.png" alt="Nathan">
+                    </div>
+                    
+                    <!-- Duplicate set for seamless scrolling -->
+                    <div class="strip-item">
+                        <img src="img/fencing/1.JPG" alt="Fencing 1">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/fencing/2.JPG" alt="Fencing 2">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan2.jpg" alt="Nathan 2">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan3.jpg" alt="Nathan 3">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan4.jpg" alt="Nathan 4">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan5.jpg" alt="Nathan 5">
+                    </div>
+                    <div class="strip-item">
+                        <img src="img/nathan.png" alt="Nathan">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="fencing">Fencing</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="certifications">Certifications</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-main">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- The gallery cards will be rendered by JS, so remove all static cards here. -->
+                </div>
+            </div>
+        </section>
+
+        <div class="lightbox">
+            <div class="lightbox-content">
+                <span class="close-lightbox">&times;</span>
+                <img src="" alt="Lightbox Image" class="lightbox-image">
+                <div class="lightbox-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <button class="lightbox-prev"><i class="ph-light ph-caret-left"></i></button>
+                <button class="lightbox-next"><i class="ph-light ph-caret-right"></i></button>
+            </div>
+        </div>
+
+        <section class="gallery-cta">
+            <div class="container">
+                <a href="#" class="btn primary glow-btn">Check More Pictures</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-watermark">NATHAN</div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="highlights.html">Highlights</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nathan-gregori/"><i class="ph-light ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/nathangregori"><i class="ph-light ph-github-logo"></i></a>
+                    <a href="mailto:Nathan_gregori@outlook.com"><i class="ph-light ph-envelope-simple"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Nathan Gregori. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html> 

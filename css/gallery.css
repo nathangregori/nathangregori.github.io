@@ -1,0 +1,437 @@
+/* === Gallery Page Styles === */
+
+.gallery-hero {
+    padding: 180px 0 60px;
+    text-align: center;
+    position: relative;
+}
+
+.gallery-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+}
+
+/* Photo Strip */
+.photo-strip {
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.strip-container {
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.strip-scroll {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    white-space: nowrap;
+    animation: scrollStrip 40s linear infinite;
+    width: fit-content;
+    padding: 10px 0;
+}
+
+.strip-container:hover .strip-scroll {
+    animation-play-state: paused;
+}
+
+@keyframes scrollStrip {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.strip-item {
+    flex: 0 0 300px;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin: 0 10px;
+    background-color: rgba(10, 10, 46, 0.2);
+}
+
+.strip-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    display: block;
+    max-width: 100%;
+}
+
+.strip-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 112, 255, 0.3);
+    z-index: 2;
+}
+
+.strip-item:hover img {
+    transform: scale(1.1);
+}
+
+.strip-item img[src*="nathan2.jpg"] {
+    object-position: top center;
+}
+
+/* Gallery Filter */
+.gallery-filter {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-btn {
+    background: rgba(10, 10, 46, 0.3);
+    border: 1px solid rgba(0, 112, 255, 0.2);
+    color: var(--color-text-muted);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: rgba(10, 10, 46, 0.5);
+    border-color: rgba(0, 112, 255, 0.5);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 112, 255, 0.3);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, rgba(0, 112, 255, 0.3), rgba(107, 0, 255, 0.3));
+    border-color: rgba(0, 112, 255, 0.8);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 112, 255, 0.5);
+}
+
+/* Gallery Grid */
+.gallery-main {
+    padding: 50px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Gallery Cards */
+.gallery-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    background: rgba(10, 10, 46, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 112, 255, 0.3);
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    transform: translateY(70px);
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .card-content {
+    transform: translateY(0);
+}
+
+.card-content h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(0, 112, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    border: 1px solid rgba(0, 112, 255, 0.3);
+}
+
+.view-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(10, 10, 46, 0.5);
+    border: 1px solid rgba(0, 112, 255, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.gallery-card:hover .view-btn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.view-btn:hover {
+    background: rgba(0, 112, 255, 0.5);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 112, 255, 0.5);
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-lightbox:hover {
+    color: var(--color-accent-1);
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(10, 10, 46, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lightbox-prev {
+    left: -80px;
+}
+
+.lightbox-next {
+    right: -80px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(0, 112, 255, 0.5);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 112, 255, 0.5);
+}
+
+/* Gallery CTA */
+.gallery-cta {
+    text-align: center;
+    padding: 50px 0 80px;
+}
+
+.glow-btn {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0070ff, #304ffe);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 112, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.glow-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.8s ease;
+}
+
+.glow-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 112, 255, 0.5);
+}
+
+.glow-btn:hover::before {
+    left: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-hero {
+        padding: 150px 0 40px;
+    }
+    
+    .gallery-intro {
+        font-size: 1rem;
+    }
+    
+    .strip-item {
+        flex: 0 0 250px;
+        height: 170px;
+    }
+    
+    .lightbox-prev {
+        left: -60px;
+    }
+    
+    .lightbox-next {
+        right: -60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .strip-item {
+        flex: 0 0 200px;
+        height: 130px;
+    }
+    
+    .filter-buttons {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-prev {
+        left: 10px;
+    }
+    
+    .lightbox-next {
+        right: 10px;
+    }
+} 

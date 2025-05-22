@@ -1,0 +1,155 @@
+.disc-profile-section {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    position: relative;
+}
+
+.disc-profile-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 68, 255, 0.1), transparent 70%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.disc-profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background: rgba(10, 10, 46, 0.15);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 112, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 112, 255, 0.2);
+}
+
+.disc-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.disc-title {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    background-color: rgba(0, 112, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    backdrop-filter: blur(6px);
+    margin-bottom: var(--spacing-sm);
+}
+
+.disc-explanation {
+    color: var(--color-text-muted);
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.disc-chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+#disc-radar-chart {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Insight cards grid - updated for 3 cards */
+.disc-insight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.disc-insight-card {
+    background: rgba(10, 10, 46, 0.2);
+    border: 1px solid rgba(0, 112, 255, 0.3);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 112, 255, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.disc-insight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 112, 255, 0.2);
+    border-color: rgba(0, 112, 255, 0.5);
+}
+
+.disc-insight-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.disc-insight-title i {
+    color: var(--color-accent-1);
+    font-size: 1.4rem;
+}
+
+.disc-insight-content {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .disc-insight-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .disc-chart-container {
+        padding: 0;
+    }
+    
+    #disc-radar-chart {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Animation for the cards */
+.disc-insight-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.disc-insight-card.visible {
+    animation: fadeInUp 0.6s forwards;
+    animation-delay: calc(var(--i, 0) * 0.15s);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 

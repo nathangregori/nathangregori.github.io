@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nathan Gregori</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-restore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="cursor-trail-container">
+        <canvas id="cursor-trail"></canvas>
+    </div>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <div class="monogram-logo">
+                <a href="index.html">NG</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="highlights.html">Highlights</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="about.html" class="mobile-link">About Me</a></li>
+                <li><a href="highlights.html" class="mobile-link">Highlights</a></li>
+                <li><a href="projects.html" class="mobile-link">Projects</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <p class="kicker">INSIGHTS & IDEAS</p>
+                <h1>The <span class="gradient-word">Blog</span></h1>
+                <p class="blog-intro">
+                    Thoughts, reflections, and insights on finance, fencing, AI, and building a multi-dimensional life.
+                </p>
+            </div>
+        </section>
+
+        <section class="blog-featured">
+            <div class="container">
+                <div class="featured-post single-column">
+                    <div class="featured-image">
+                        <img src="img/blog/ParisHK.png" alt="From Paris to Hong Kong">
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-text">
+                            <span class="post-tag">Personal Growth</span>
+                            <h2>How I Turned Trauma into Fuel: My Story from Paris to Hong Kong</h2>
+                            <p class="post-excerpt">
+                                A raw and powerful account of overcoming personal adversity, winning scholarships, and building self-mastery through resilience and determination.
+                            </p>
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <i class="ph-light ph-calendar"></i>
+                                    <span>June 15, 2022</span>
+                                </div>
+                                <div class="post-read-time">
+                                    <i class="ph-light ph-clock"></i>
+                                    <span>8 min read</span>
+                                </div>
+                            </div>
+                            <a href="blog/trauma-to-fuel.html" class="btn primary">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-grid-section">
+            <div class="container">
+                <h2>Latest <span class="gradient-highlight">Articles</span></h2>
+                <div class="blog-grid">
+                    <div class="blog-post-card">
+                        <div class="post-image">
+                            <img src="img/blog/graduation.png" alt="Graduation">
+                        </div>
+                        <div class="post-content">
+                            <span class="post-tag">Education</span>
+                            <h3>Graduation: A Reflection on the End of My Undergraduate Journey</h3>
+                            <p class="post-excerpt">
+                                Looking back at my university experience, the lessons learned, and what lies ahead after completing this important chapter of life.
+                            </p>
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <i class="ph-light ph-calendar"></i>
+                                    <span>June 10, 2023</span>
+                                </div>
+                                <div class="post-read-time">
+                                    <i class="ph-light ph-clock"></i>
+                                    <span>6 min read</span>
+                                </div>
+                            </div>
+                            <a href="blog/graduation-reflection.html" class="btn primary">Read Article</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post-card">
+                        <div class="post-image">
+                            <img src="img/blog/Post econ.png" alt="Post-AI Economy">
+                        </div>
+                        <div class="post-content">
+                            <span class="post-tag">Economics</span>
+                            <h3>Post-AI Economy: How Will Wealth Be Divided</h3>
+                            <p class="post-excerpt">
+                                Examining the economic implications of widespread AI adoption and how it might reshape wealth distribution in our society.
+                            </p>
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <i class="ph-light ph-calendar"></i>
+                                    <span>May 15, 2023</span>
+                                </div>
+                                <div class="post-read-time">
+                                    <i class="ph-light ph-clock"></i>
+                                    <span>7 min read</span>
+                                </div>
+                            </div>
+                            <a href="blog/post-ai-economy.html" class="btn primary">Read Article</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post-card">
+                        <div class="post-image">
+                            <img src="img/blog/fencing.png" alt="Healthy Life">
+                        </div>
+                        <div class="post-content">
+                            <span class="post-tag">Wellness</span>
+                            <h3>How to Live a Healthy Life: Achieve a Balanced Routine</h3>
+                            <p class="post-excerpt">
+                                Essential daily habits and practices for maintaining physical and mental wellbeing in our fast-paced modern world.
+                            </p>
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <i class="ph-light ph-calendar"></i>
+                                    <span>April 22, 2023</span>
+                                </div>
+                                <div class="post-read-time">
+                                    <i class="ph-light ph-clock"></i>
+                                    <span>5 min read</span>
+                                </div>
+                            </div>
+                            <a href="blog/healthy-life.html" class="btn primary">Read Article</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post-card">
+                        <div class="post-image">
+                            <img src="img/blog/crypto.png" alt="Cryptocurrency">
+                        </div>
+                        <div class="post-content">
+                            <span class="post-tag">Finance</span>
+                            <h3>The Future: Cryptocurrencies</h3>
+                            <p class="post-excerpt">
+                                Exploring the evolving landscape of digital currencies and their potential to transform the global financial system.
+                            </p>
+                            <div class="post-meta">
+                                <div class="post-date">
+                                    <i class="ph-light ph-calendar"></i>
+                                    <span>March 8, 2023</span>
+                                </div>
+                                <div class="post-read-time">
+                                    <i class="ph-light ph-clock"></i>
+                                    <span>8 min read</span>
+                                </div>
+                            </div>
+                            <a href="blog/cryptocurrency-future.html" class="btn primary">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h2>Subscribe to My Newsletter</h2>
+                        <p>Get my latest insights on finance, technology, and personal growth directly to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn primary">Subscribe</button>
+                        </form>
+                        <p class="small-text">I respect your privacy. Unsubscribe at any time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-categories">
+            <div class="container">
+                <h2>Explore by <span class="gradient-highlight">Category</span></h2>
+                <div class="categories-grid">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="ph-light ph-brain"></i>
+                        </div>
+                        <h3>Technology & AI</h3>
+                        <p>Automation, digital transformation, and the future of work</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="ph-light ph-chart-line-up"></i>
+                        </div>
+                        <h3>Finance & Strategy</h3>
+                        <p>Investment insights, market analysis, and strategic thinking</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="ph-light ph-sword"></i>
+                        </div>
+                        <h3>Fencing & Sports</h3>
+                        <p>Competition, technique, and mental performance</p>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">
+                            <i class="ph-light ph-pen-nib"></i>
+                        </div>
+                        <h3>Personal Growth</h3>
+                        <p>Self-mastery, resilience, and building a meaningful life</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Have a topic you'd like me to cover?</h2>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn primary">Suggest a Topic</a>
+                    <a href="about.html" class="btn secondary">Learn More About Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-watermark">NATHAN</div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="highlights.html">Highlights</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nathan-gregori/"><i class="ph-light ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/nathangregori"><i class="ph-light ph-github-logo"></i></a>
+                    <a href="mailto:Nathan_gregori@outlook.com"><i class="ph-light ph-envelope-simple"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Nathan Gregori. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

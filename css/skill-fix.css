@@ -1,0 +1,47 @@
+/* Skills section fix to ensure all 5 boxes are on the same row */
+.skill-tags-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    width: 100% !important;
+}
+
+.skill-category {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    max-width: 19% !important;
+    width: 19% !important;
+}
+
+/* Adjust the container to be wider */
+.services-section .container {
+    max-width: 1300px !important;
+    padding: 0 15px !important;
+}
+
+/* Ensure proper sizing of elements inside boxes */
+.skill-category h3 {
+    font-size: 1rem !important;
+    min-height: 40px !important;
+}
+
+.skill-tag {
+    font-size: 0.75rem !important;
+    padding: 3px 8px !important;
+}
+
+/* Mobile adjustments to prevent wrapping */
+@media (max-width: 992px) {
+    .skill-tags-container {
+        overflow-x: auto !important;
+        padding-bottom: 15px !important;
+    }
+    
+    .skill-category {
+        flex: 0 0 180px !important;
+        width: 180px !important;
+        max-width: none !important;
+    }
+} 
