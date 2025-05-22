@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlights | Nathan Gregori</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/journey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Add some transition effect for smooth filtering */
+        .timeline-block {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        
+        /* Style for filter chips */
+        .filter-chip {
+            background: rgba(10, 10, 46, 0.25);
+            border: 1px solid rgba(0, 112, 255, 0.2);
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
+        }
+        
+        .filter-chip.active {
+            background: linear-gradient(135deg, rgba(0, 112, 255, 0.3), rgba(48, 79, 254, 0.4));
+            border-color: rgba(0, 112, 255, 0.5);
+            color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 112, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-trail-container">
+        <canvas id="cursor-trail"></canvas>
+    </div>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <div class="monogram-logo">
+                <a href="index.html">NG</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="highlights.html" class="active">Highlights</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="menu-content">
+            <ul>
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="about.html" class="mobile-link">About Me</a></li>
+                <li><a href="highlights.html" class="mobile-link">Highlights</a></li>
+                <li><a href="projects.html" class="mobile-link">Projects</a></li>
+                <li><a href="blog.html" class="mobile-link">Blog</a></li>
+                <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
+                <li><a href="contact.html" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <p class="kicker">MY JOURNEY</p>
+                <h1>The <span class="gradient-word">Highlights</span> of My Story</h1>
+                <p class="sub">
+                    A visual record of effort, impact, and progress—the moments that have shaped who I am becoming.
+                </p>
+            </div>
+        </section>
+
+        <!-- Path of Progress Timeline Section -->
+        <section class="journey-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="kicker">KEY MILESTONES</div>
+                    <h2>Path of <span class="gradient-highlight">Progress</span></h2>
+                    <p class="section-intro">
+                        These aren't just achievements — they're pivotal moments that shaped who I am. Each milestone represents the commitment, discipline, and passion behind my journey.
+                    </p>
+
+                    <!-- New Category Filter -->
+                    <div class="journey-filter">
+                        <button class="filter-chip active" id="filter-personal" data-filter="personal">Personal</button>
+                        <button class="filter-chip" id="filter-sports" data-filter="sports">Sports</button>
+                        <button class="filter-chip" id="filter-music" data-filter="music">Music</button>
+                        <button class="filter-chip" id="filter-jobs" data-filter="jobs">Jobs</button>
+                        <button class="filter-chip" id="filter-academic" data-filter="academic">Academic</button>
+                    </div>
+                </div>
+
+                <div class="professional-timeline">
+                    <!-- Vertical line that runs through the center -->
+                    <div class="timeline-line"></div>
+                    
+                    <!-- PERSONAL Section -->
+                    <!-- Mentorship - Left side -->
+                    <div class="timeline-block left" data-category="personal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Mentorship</div>
+                            <div class="content-card">
+                                <h3>Leadership Development</h3>
+                                <ul>
+                                    <li>Joined multiple Mentorship programs to network with Finance professional</li>
+                                    <li>Mentored multiple students across the college of business</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Languages - Right side -->
+                    <div class="timeline-block right" data-category="personal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Languages</div>
+                            <div class="content-card">
+                                <h3>Multilingual Proficiency</h3>
+                                <ul>
+                                    <li>Learned Chinese and Spanish at a level of B1 approximately</li>
+                                    <li>Learned German for 6 years</li>
+                                    <li>Fluent in Romanian</li>
+                                    <li>Native in French and English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Side Quests - Left side -->
+                    <div class="timeline-block left" data-category="personal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Side Quests</div>
+                            <div class="content-card">
+                                <h3>Adventure & Exploration</h3>
+                                <ul>
+                                    <li>Diver Padi level 1</li>
+                                    <li>Competition level in Skiing</li>
+                                    <li>Climbed the Mount Kinabalu (4095m)</li>
+                                    <li>Rugby</li>
+                                    <li>Football</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- SPORTS Section -->
+                    <!-- Fencing - Right side -->
+                    <div class="timeline-block right" data-category="sports">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Fencing</div>
+                            <div class="content-card">
+                                <h3>Competitive Fencing</h3>
+                                <ul>
+                                    <li>French National Circuit Champion (Gold)</li>
+                                    <li>2× Silver, 2× Bronze at French National Championships</li>
+                                    <li>Represented France in 10+ World Cups (U20/U23)</li>
+                                    <li>3× Hong Kong Universities Team Champion</li>
+                                    <li>Bronze at FILA x FAHKC 2024</li>
+                                    <li>Ranked Top 8 U23 in Hong Kong 2024-2025</li>
+                                    <li>Certified Elite Athlete by French Ministry of Sports</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chess - Left side -->
+                    <div class="timeline-block left" data-category="sports">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Chess</div>
+                            <div class="content-card">
+                                <h3>High Level</h3>
+                                <ul>
+                                    <li>+1300 Elo rapid rating (online)</li>
+                                    <li>Competed in regional and school chess tournaments</li>
+                                    <li>Strategic pattern recognition sharpened since childhood</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Swimming - Right side -->
+                    <div class="timeline-block right" data-category="sports">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Swimming</div>
+                            <div class="content-card">
+                                <h3>Early Athletic Development</h3>
+                                <ul>
+                                    <li>Trained for 7+ years</li>
+                                    <li>Developed early endurance, discipline, and body control</li>
+                                    <li>Built foundational stamina that fed into fencing performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MUSIC Section -->
+                    <!-- Classical Piano - Left side -->
+                    <div class="timeline-block left" data-category="music">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Classical Piano & Organ</div>
+                            <div class="content-card">
+                                <h3>Musical Training</h3>
+                                <ul>
+                                    <li>Studied classical piano and organ for 10+ years</li>
+                                    <li>Performed solo and duet compositions during school concerts</li>
+                                    <li>Developed advanced skill in expression, discipline, and musical theory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Music Production - Right side -->
+                    <div class="timeline-block right" data-category="music">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Music Production</div>
+                            <div class="content-card">
+                                <h3>Creative Expression</h3>
+                                <ul>
+                                    <li>Produced and released original hip-hop tracks as a teen</li>
+                                    <li>Accumulated 100K+ views/streams across platforms (YouTube, Spotify)</li>
+                                    <li>Managed full-stack creative process: lyrics, mixing, mastering, visuals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- JOBS Section -->
+                    <!-- Other Jobs - Left side -->
+                    <div class="timeline-block left" data-category="jobs">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Other Jobs</div>
+                            <div class="content-card">
+                                <h3>Professional Roles</h3>
+                                <ul>
+                                    <li>French Teacher</li>
+                                    <li>Fencing coach at Apex</li>
+                                    <li>Marketing designer for multiple brands</li>
+                                    <li>Business Tutor for student athletes</li>
+                                    <li>Designer for multiple brands</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Side Businesses - Right side -->
+                    <div class="timeline-block right" data-category="jobs">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Side Businesses</div>
+                            <div class="content-card">
+                                <h3>Entrepreneurial Ventures</h3>
+                                <ul>
+                                    <li>Retail company for clothes</li>
+                                    <li>Built KEKO, a solution for hygiene and sustainability</li>
+                                    <li>Agent for fencing clothes distribution in Hong Kong</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ACADEMIC Section -->
+                    <!-- University - Left side -->
+                    <div class="timeline-block left" data-category="academic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">University Excellence</div>
+                            <div class="content-card">
+                                <h3>Academic Achievements</h3>
+                                <ul>
+                                    <li>BBA in Finance & Strategy and International Management (City University of Hong Kong)</li>
+                                    <li>Graduated top of department with Highest GPA (4.06/4.3) — Expected Summa Cum Laude</li>
+                                    <li>10+ academic scholarships including CityU Scholarship (Top 5%) and OAES (HKD 160K)</li>
+                                    <li>5× Dean's List | Beta Gamma Sigma Member | "Tiger Student" Award (Top 10% Business School)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- International Education - Right side -->
+                    <div class="timeline-block right" data-category="academic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">International Exposure</div>
+                            <div class="content-card">
+                                <h3>Global Education</h3>
+                                <ul>
+                                    <li>French Baccalaureate with Honours in Math & Economics</li>
+                                    <li>Perfect 20/20 score in Eloquence Exam (Grand Oral)</li>
+                                    <li>Studied across three countries: France, Romania, and Hong Kong — fluent in French, English, and Romanian, conversational in Mandarin, Spanish, German</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Learning - Left side -->
+                    <div class="timeline-block left" data-category="academic">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Professional Learning</div>
+                            <div class="content-card">
+                                <h3>Practical Skills Development</h3>
+                                <ul>
+                                    <li>Built AI tools, Tableau dashboards, and PowerBI automations in real-world finance roles</li>
+                                    <li>Participated in top-tier virtual programs: Goldman Sachs, JPMorgan, HSBC, Deloitte, Standard Bank</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievement Pills -->
+                <div class="achievement-section">
+                    <h3>Achievement Metrics</h3>
+                    <div class="achievement-cloud">
+                        <div class="achievement-pill">10+ Academic Scholarships 🎓</div>
+                        <div class="achievement-pill">4.06/4.3 GPA 📚</div>
+                        <div class="achievement-pill">6 Languages 🗣️</div>
+                        <div class="achievement-pill">French National Champion 🏆</div>
+                        <div class="achievement-pill">10+ World Cups 🌏</div>
+                        <div class="achievement-pill">100K+ Music Streams/Views 🎵</div>
+                        <div class="achievement-pill">Self-Built Digital Portfolio 💻</div>
+                        <div class="achievement-pill">10+ Years Piano Training 🎹</div>
+                        <div class="achievement-pill">KEKO Business Venture 💼</div>
+                    </div>
+                </div>
+                
+                <!-- Statement Banner -->
+                <div class="statement-banner">
+                    <p>"Achievements aren't medals. They're momentum markers of who I'm becoming."</p>
+                    <div class="statement-underline"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Want to learn more?</h2>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="btn primary">View My Projects</a>
+                    <a href="contact.html" class="btn secondary">Get In Touch</a>
+                    <a href="about.html" class="btn secondary">About Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-watermark">NATHAN</div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="highlights.html">Highlights</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nathan-gregori/"><i class="ph-light ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/nathangregori"><i class="ph-light ph-github-logo"></i></a>
+                    <a href="mailto:Nathan_gregori@outlook.com"><i class="ph-light ph-envelope-simple"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2023 Nathan Gregori. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/journey.js"></script>
+</body>
+</html> 
