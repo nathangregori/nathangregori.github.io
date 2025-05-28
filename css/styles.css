@@ -4184,6 +4184,18 @@ h2,
     position: relative;
 }
 
+.video-intro {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .video-container {
     position: relative;
     width: 100%;
