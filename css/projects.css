@@ -22,7 +22,7 @@
 
 .category-btn {
     background: rgba(10, 10, 46, 0.3);
-    border: 1px solid rgba(0, 112, 255, 0.2);
+    border: 1px solid rgba(74, 144, 226, 0.2);
     color: var(--color-text-muted);
     padding: 12px 25px;
     border-radius: 30px;
@@ -34,17 +34,17 @@
 
 .category-btn:hover {
     background: rgba(10, 10, 46, 0.5);
-    border-color: rgba(0, 112, 255, 0.5);
+    border-color: rgba(74, 144, 226, 0.5);
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 112, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(74, 144, 226, 0.3);
 }
 
 .category-btn.active {
-    background: linear-gradient(135deg, rgba(0, 112, 255, 0.3), rgba(107, 0, 255, 0.3));
-    border-color: rgba(0, 112, 255, 0.8);
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.3), rgba(107, 0, 255, 0.3));
+    border-color: rgba(74, 144, 226, 0.8);
     color: #fff;
-    box-shadow: 0 0 15px rgba(0, 112, 255, 0.5);
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.5);
 }
 
 /* Timeline */
@@ -69,7 +69,7 @@
     left: 0;
     height: 100%;
     width: 60%;
-    background: linear-gradient(90deg, rgba(0, 112, 255, 0.8), rgba(107, 0, 255, 0.6));
+    background: linear-gradient(90deg, rgba(74, 144, 226, 0.8), rgba(107, 0, 255, 0.6));
     border-radius: 2px;
 }
 
@@ -90,7 +90,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 112, 255, 0.5);
+    background: rgba(74, 144, 226, 0.5);
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
@@ -140,7 +140,7 @@
 /* Base Project Card */
 .project-card {
     background: rgba(10, 10, 46, 0.2);
-    border: 1px solid rgba(0, 112, 255, 0.3);
+    border: 1px solid rgba(74, 144, 226, 0.3);
     border-radius: 16px;
     overflow: hidden;
     padding: 30px;
@@ -153,8 +153,8 @@
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 112, 255, 0.3);
-    border-color: rgba(0, 112, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(74, 144, 226, 0.3);
+    border-color: rgba(74, 144, 226, 0.5);
     background: rgba(10, 10, 46, 0.3);
 }
 
@@ -165,7 +165,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 112, 255, 0.1), rgba(107, 0, 255, 0.1));
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(107, 0, 255, 0.1));
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -181,7 +181,7 @@
 
 .project-card:hover .card-icon {
     transform: scale(1.1);
-    background: linear-gradient(135deg, rgba(0, 112, 255, 0.2), rgba(107, 0, 255, 0.2));
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(107, 0, 255, 0.2));
 }
 
 .card-content {
@@ -244,7 +244,7 @@
 
 .tool-icon:hover {
     transform: translateY(-3px);
-    background: rgba(0, 112, 255, 0.2);
+    background: rgba(74, 144, 226, 0.2);
 }
 
 .tool-icon:hover i {
@@ -269,8 +269,8 @@
 }
 
 .gallery-btn {
-    background: rgba(0, 112, 255, 0.2);
-    border: 1px solid rgba(0, 112, 255, 0.3);
+    background: rgba(74, 144, 226, 0.2);
+    border: 1px solid rgba(74, 144, 226, 0.3);
     color: var(--color-text);
     border-radius: 30px;
     padding: 8px 18px;
@@ -283,10 +283,10 @@
 }
 
 .gallery-btn:hover {
-    background: rgba(0, 112, 255, 0.4);
-    border-color: rgba(0, 112, 255, 0.6);
+    background: rgba(74, 144, 226, 0.4);
+    border-color: rgba(74, 144, 226, 0.6);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 112, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 10px rgba(74, 144, 226, 0.3);
 }
 
 .code-btn i {
@@ -354,7 +354,7 @@
     padding: 30px;
     text-align: center;
     background: rgba(10, 10, 46, 0.2);
-    border: 1px solid rgba(0, 112, 255, 0.3);
+    border: 1px solid rgba(74, 144, 226, 0.3);
     border-radius: 16px;
 }
 
@@ -456,9 +456,9 @@
 }
 
 .heatmap-item.medium {
-    background: rgba(0, 112, 255, 0.2);
-    border: 1px solid rgba(0, 112, 255, 0.4);
-    color: rgba(0, 112, 255, 0.9);
+    background: rgba(74, 144, 226, 0.2);
+    border: 1px solid rgba(74, 144, 226, 0.4);
+    color: rgba(74, 144, 226, 0.9);
 }
 
 .heatmap-item.cool {
@@ -481,7 +481,7 @@
 }
 
 .heatmap-item.medium:hover {
-    background: rgba(0, 112, 255, 0.3);
+    background: rgba(74, 144, 226, 0.3);
 }
 
 .heatmap-item.cool:hover {
