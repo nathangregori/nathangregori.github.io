@@ -120,11 +120,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700; /* Bold for headings */
     letter-spacing: -0.03em;
     margin-bottom: var(--spacing-md);
-    line-height: 1.1; /* Tighter line height */
+    line-height: 1.4; /* Increased from 1.1 to prevent text cutoff */
 }
 
 h1 {
     font-size: 3.5rem;
+    padding-bottom: 0.2em; /* Add extra space for descenders */
 }
 
 h2 {
@@ -443,11 +444,12 @@ section.visible {
     padding: var(--spacing-xxl) 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible; /* Changed from hidden to prevent text clipping */
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: calc(var(--spacing-xxl) + 1rem); /* Extra space for descenders */
 }
 
 .hero-section::before {
@@ -477,7 +479,7 @@ body:has(> main > section#home.hero-section) .hero-section {
 }
 
 .gradient-word {
-    background: linear-gradient(135deg, #4A90E2, #2E5BBA);
+    background: linear-gradient(135deg, #69fff3, #0291ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -485,6 +487,8 @@ body:has(> main > section#home.hero-section) .hero-section {
     position: relative;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.1);
     font-weight: 700;
+    line-height: 1.4; /* Ensure proper line height for gradient text */
+    padding-bottom: 0.15em; /* Extra space for descenders */
 }
 
 .gradient-word::after {
@@ -943,7 +947,7 @@ textarea.form-control {
 
 /* === Gradient Highlight === */
 .gradient-highlight {
-    background: linear-gradient(135deg, #4A90E2, #2E5BBA);
+    background: linear-gradient(135deg, #69fff3, #0291ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -2059,10 +2063,19 @@ footer::before {
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm); /* Reduced from spacing-lg to bring closer to subtitle */
     text-align: center;
     letter-spacing: -0.03em;
-    line-height: 1.1;
+    line-height: 1.4; /* Increased from 1.1 to prevent text cutoff */
+}
+
+/* Section intro/subtitle styling */
+.section-intro {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+    line-height: 1.6;
 }
 
 /* Section Preamble Badge Styling */
@@ -2167,7 +2180,7 @@ h2,
 /* Contact form styling consistency */
 .contact-form-container {
     max-width: 600px;
-    margin: var(--spacing-lg) auto;
+    margin: var(--spacing-lg) auto 0;
     background: rgba(10, 10, 46, 0.3);
     border-radius: var(--radius-lg);
     padding: var(--spacing-xl) var(--spacing-lg);
@@ -4545,6 +4558,30 @@ h2,
 .featured-post.single-column .featured-text {
     max-width: 50%;
     margin: 0 auto;
+}
+
+/* Contact Card Icon - Consolidated consistent styling */
+.contact-card-icon {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background: rgba(74, 144, 226, 0.1) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto var(--spacing-md) !important;
+    transition: all 0.3s ease !important;
+}
+
+.contact-card-icon i {
+    font-size: 24px !important;
+    color: var(--color-accent-1) !important;
+}
+
+.contact-card:hover .contact-card-icon {
+    background: rgba(74, 144, 226, 0.2) !important;
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.5) !important;
+    transform: scale(1.05) !important;
 }
   
   
