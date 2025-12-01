@@ -14,10 +14,6 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <div class="cursor-trail-container">
-        <canvas id="cursor-trail"></canvas>
-    </div>
-
     <header class="nav-header">
         <div class="container nav-container">
             <div class="monogram-logo">
@@ -29,7 +25,6 @@
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="highlights.html">Highlights</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -49,7 +44,6 @@
                 <li><a href="about.html" class="mobile-link">About Me</a></li>
                 <li><a href="highlights.html" class="mobile-link">Highlights</a></li>
                 <li><a href="projects.html" class="mobile-link">Projects</a></li>
-                <li><a href="blog.html" class="mobile-link">Blog</a></li>
                 <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
                 <li><a href="contact.html" class="mobile-link">Contact</a></li>
             </ul>
@@ -65,8 +59,8 @@
                 
                 <p class="kicker">AI • SPORTS • FINANCE</p>
                 <h1>
-                    Nathan Gregori — Where <span class="gradient-word">Imagination</span><br>
-                    Meets <span id="role-rotate">Strategy</span>
+                    Nathan Gregori<br>
+                    Where <span class="gradient-word">Imagination</span> Meets <span id="role-rotate">Trading</span>
                 </h1>
                 <p class="sub">Trading | Fencing Athlete | AI enthusiast | 10× Scholar | CityU Entrepreneurship & Finance</p>
                 
@@ -162,7 +156,42 @@
                     <!-- Vertical line that runs through the center -->
                     <div class="timeline-line"></div>
                     
-                    <!-- Experience 1 - Left side -->
+                    <!-- Experience 1 - Left side (Most recent) -->
+                    <div class="timeline-block left" data-category="experience">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Dec 2025 – Present</div>
+                            <div class="content-card">
+                                <h3>Nomura, Hong Kong</h3>
+                                <h4>Trading Systems Analyst</h4>
+                                <ul>
+                                    <li>Support electronic and algorithmic trading across APAC equities by resolving real-time trade issues and ensuring platform stability during live markets.</li>
+                                    <li>Collaborate with trading desks and developers to enhance system performance and reliability for high-value clients and business flows.</li>
+                                    <li>Automate workflows using Python and Unix tooling to reduce manual interventions and minimize execution risk.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 - Right side -->
+                    <div class="timeline-block right" data-category="experience">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="date-badge">Aug 2025 – Nov 2025</div>
+                            <div class="content-card">
+                                <h3>CIGP, Hong Kong</h3>
+                                <h4>Investment Research Analyst Intern</h4>
+                                <ul>
+                                    <li>Developed an automated equity research framework integrating Bloomberg Terminal data to streamline fundamental analysis.</li>
+                                    <li>Built an interactive portfolio analytics dashboard to compare and adjust model portfolios by exposure, allocation, and risk metrics.</li>
+                                    <li>Delivered data-driven investment insights and trade ideas, supporting scenario analysis, stress testing, and real-time portfolio monitoring.</li>
+                                    <li>Created a Python automation tool that transforms PMS portfolio data into client-ready factsheets with performance, top holdings, and key metrics.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 - Left side -->
                     <div class="timeline-block left" data-category="experience">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
@@ -180,7 +209,7 @@
                         </div>
                     </div>
                     
-                    <!-- Experience 2 - Right side -->
+                    <!-- Experience 4 - Right side -->
                     <div class="timeline-block right" data-category="experience">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
@@ -198,7 +227,7 @@
                         </div>
                     </div>
                     
-                    <!-- Experience 3 - Left side -->
+                    <!-- Experience 5 - Left side -->
                     <div class="timeline-block left" data-category="experience">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
@@ -216,7 +245,7 @@
                         </div>
                     </div>
                     
-                    <!-- Experience 4 - Right side -->
+                    <!-- Experience 6 - Right side -->
                     <div class="timeline-block right" data-category="experience">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
@@ -406,47 +435,6 @@
             </div>
         </section>
 
-        <section id="blog" class="blog-section">
-            <div class="container">
-                <h2>Latest <span class="gradient-highlight">Insights</span></h2>
-                <div class="blog-grid">
-                    <div class="blog-card glassmorphic">
-                        <div class="blog-content">
-                            <h3>How I Turned Trauma into Fuel: My Story from Paris to Hong Kong</h3>
-                            <p class="blog-excerpt">A raw and powerful account of overcoming personal adversity, winning scholarships, and building self-mastery.</p>
-                            <div class="blog-meta">
-                                <span class="read-time"><i class="ph-light ph-clock"></i> 8 min read</span>
-                            </div>
-                            <a href="blog/trauma-to-fuel.html" class="btn glow-btn">Read More <i class="ph-light ph-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-card glassmorphic">
-                        <div class="blog-content">
-                            <h3>Graduation: A Reflection on the End of My Undergraduate Journey</h3>
-                            <p class="blog-excerpt">Looking back at my university experience, the lessons learned, and what lies ahead.</p>
-                            <div class="blog-meta">
-                                <span class="read-time"><i class="ph-light ph-clock"></i> 6 min read</span>
-                            </div>
-                            <a href="blog/graduation-reflection.html" class="btn glow-btn">Read More <i class="ph-light ph-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-card glassmorphic">
-                        <div class="blog-content">
-                            <h3>Post-AI Economy: How Will Wealth Be Divided</h3>
-                            <p class="blog-excerpt">Examining the economic implications of widespread AI adoption and how it might reshape wealth distribution.</p>
-                            <div class="blog-meta">
-                                <span class="read-time"><i class="ph-light ph-clock"></i> 7 min read</span>
-                            </div>
-                            <a href="blog/post-ai-economy.html" class="btn glow-btn">Read More <i class="ph-light ph-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="center-link">
-                    <a href="blog.html" class="btn secondary">Read the Blog</a>
-                </div>
-            </div>
-        </section>
-
         <section id="gallery" class="gallery-section">
             <div class="container">
                 <h2><span class="gradient-highlight">Gallery</span></h2>
@@ -491,95 +479,20 @@
                 </div>
             </div>
         </section>
-        
-        <section id="testimonials" class="testimonials-section">
-            <div class="container">
-                <h2>What They <span class="gradient-highlight">Said</span></h2>
-                
-                <div class="testimonials-container">
-                    <div class="testimonial-slider">
-                        <div class="testimonial-slides">
-                            <div class="testimonial-slide">
-                                <div class="testimonial-content">
-                                    <div class="testimonial-avatar">
-                                        <img src="img/testimonial-1.jpg" alt="John Tanaka">
-                                    </div>
-                                    <div class="testimonial-quote">
-                                        Nathan's resilience and intelligence are unmatched. I'd hire him again in a heartbeat. His ability to analyze complex situations and develop innovative solutions is remarkable.
-                                    </div>
-                                    <div class="testimonial-name">John Tanaka</div>
-                                    <div class="testimonial-position">Nomura Intern Mentor</div>
-                                </div>
-                            </div>
-                            
-                            <div class="testimonial-slide">
-                                <div class="testimonial-content">
-                                    <div class="testimonial-avatar">
-                                        <img src="img/testimonial-2.jpg" alt="Sarah Chen">
-                                    </div>
-                                    <div class="testimonial-quote">
-                                        Working with Nathan was transformative for our team. His strategic thinking and cross-cultural communication skills helped bridge critical gaps in our global initiatives.
-                                    </div>
-                                    <div class="testimonial-name">Sarah Chen</div>
-                                    <div class="testimonial-position">HKEX Senior Analyst</div>
-                                </div>
-                            </div>
-                            
-                            <div class="testimonial-slide">
-                                <div class="testimonial-content">
-                                    <div class="testimonial-avatar">
-                                        <img src="img/testimonial-3.jpg" alt="Michael Wong">
-                                    </div>
-                                    <div class="testimonial-quote">
-                                        Nathan isn't just a performer — he's a visionary who combines technical expertise with a profound understanding of human behavior and motivation.
-                                    </div>
-                                    <div class="testimonial-name">Michael Wong</div>
-                                    <div class="testimonial-position">CityU Faculty Mentor</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-controls">
-                        <button class="testimonial-control prev"><i class="ph-light ph-caret-left"></i></button>
-                        <button class="testimonial-control next"><i class="ph-light ph-caret-right"></i></button>
-                    </div>
-                    
-                    <div class="testimonial-indicators">
-                        <div class="testimonial-indicator active"></div>
-                        <div class="testimonial-indicator"></div>
-                        <div class="testimonial-indicator"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact" class="cta-section">
+        <section id="contact" class="cta-section simple-contact-section">
             <div class="container">
-                <h2><span class="contact-title">Contact</span> <span class="gradient-highlight">Me</span></h2>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Your message"></textarea>
-                        </div>
-                        <div class="form-submit">
-                            <button type="submit" class="btn primary">Send Message</button>
-                        </div>
-                    </form>
+                <div class="simple-contact-card">
+                    <div class="simple-contact-icon">
+                        <i class="ph-light ph-envelope-simple"></i>
+                    </div>
+                    <h2>Contact <span class="gradient-highlight">Me</span></h2>
+                    <p class="simple-contact-text">
+                        For opportunities, collaborations or questions, reach out directly by email:
+                    </p>
+                    <a href="mailto:nathan_gregori@outlook.com" class="simple-contact-email">
+                        nathan_gregori@outlook.com
+                    </a>
                 </div>
             </div>
         </section>
@@ -595,7 +508,6 @@
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="highlights.html">Highlights</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -613,7 +525,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/cursor-trail.js"></script>
     <script src="js/journey.js"></script>
 </body>
 </html> 

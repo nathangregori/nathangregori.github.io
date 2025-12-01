@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initSkillProgressBars();
     initLogoCarousel();
     initTestimonialCarousel();
-    initCursorTrail();
     initDiscInsightCards();
     initSingleCardTimeline();
     initProfessionalTimeline();
@@ -69,15 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // === Custom Cursor Trail ===
-    function initCursorTrail() {
-        // Load cursor trail script if it exists in the DOM
-        if (document.querySelector('#cursor-trail')) {
-            const script = document.createElement('script');
-            script.src = 'js/cursor-trail.js';
-            document.body.appendChild(script);
-        }
-    }
+    // Cursor trail disabled for performance
     
     // === Intersection Observer for Section Animations ===
     function initSectionAnimations() {

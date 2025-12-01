@@ -12,10 +12,6 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <div class="cursor-trail-container">
-        <canvas id="cursor-trail"></canvas>
-    </div>
-
     <header class="nav-header">
         <div class="container nav-container">
             <div class="monogram-logo">
@@ -27,7 +23,7 @@
                     <li><a href="about.html">About Me</a></li>
                     <li><a href="highlights.html">Highlights</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
@@ -47,7 +43,6 @@
                 <li><a href="about.html" class="mobile-link">About Me</a></li>
                 <li><a href="highlights.html" class="mobile-link">Highlights</a></li>
                 <li><a href="projects.html" class="mobile-link">Projects</a></li>
-                <li><a href="blog.html" class="mobile-link">Blog</a></li>
                 <li><a href="gallery.html" class="mobile-link">Gallery</a></li>
                 <li><a href="contact.html" class="mobile-link">Contact</a></li>
             </ul>
@@ -65,102 +60,19 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="simple-contact-section">
             <div class="container">
-                <!-- Contact Info Grid - 4 equal boxes in a row -->
-                <div class="contact-info-grid">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="ph-light ph-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:nathan_gregori@outlook.com" class="contact-email">nathan_gregori@outlook.com</a></p>
+                <div class="simple-contact-card">
+                    <div class="simple-contact-icon">
+                        <i class="ph-light ph-envelope-simple"></i>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="ph-light ph-map-pin"></i>
-                        </div>
-                        <h3>Location</h3>
-                        <p>Based in Hong Kong<br>Open to remote and global work</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="ph-light ph-linkedin-logo"></i>
-                        </div>
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://www.linkedin.com/in/nathan-gregori/" target="_blank">Connect with me</a></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="ph-light ph-clock"></i>
-                        </div>
-                        <h3>Response Time</h3>
-                        <p>Usually within 24 hours<br>Monday - Friday</p>
-                    </div>
-                </div>
-                
-                <!-- Send Message Form -->
-                <div class="message-form-container">
-                    <div class="form-header">
-                        <h2>Send a Message</h2>
-                        <p>I'd love to hear from you. Fill in the form below, and I'll get back to you as soon as possible.</p>
-                    </div>
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn primary">
-                                <span>Send Message</span>
-                                <i class="ph-light ph-paper-plane-right"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-map">
-            <div class="container">
-                <h2>Based in Hong Kong</h2>
-                <div class="map-container">
-                    <div class="map-overlay">
-                        <p>Currently in Hong Kong, but available for global collaborations</p>
-                        <i class="ph-light ph-globe-hemisphere-west"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="cta-section">
-            <div class="container">
-                <h2>Not ready to message yet?</h2>
-                <div class="cta-buttons">
-                    <a href="projects.html" class="btn primary">View My Projects</a>
-                    <a href="about.html" class="btn secondary">Read My Story</a>
-                    <a href="documents/nathan.cv.pdf" class="btn secondary">Download CV</a>
-                </div>
-                <div class="social-links">
-                    <p>Or find me on social media:</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/nathan-gregori/" target="_blank"><i class="ph-light ph-linkedin-logo"></i></a>
-                        <a href="#" target="_blank"><i class="ph-light ph-instagram-logo"></i></a>
-                        <a href="https://github.com/nathangregori" target="_blank"><i class="ph-light ph-github-logo"></i></a>
-                        <a href="mailto:Nathan_gregori@outlook.com"><i class="ph-light ph-twitter-logo"></i></a>
-                    </div>
+                    <h2>Contact <span class="gradient-highlight">Me</span></h2>
+                    <p class="simple-contact-text">
+                        For opportunities, collaborations or questions, reach out directly by email:
+                    </p>
+                    <a href="mailto:nathan_gregori@outlook.com" class="simple-contact-email">
+                        nathan_gregori@outlook.com
+                    </a>
                 </div>
             </div>
         </section>
@@ -176,7 +88,7 @@
                         <li><a href="about.html">About Me</a></li>
                         <li><a href="highlights.html">Highlights</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
